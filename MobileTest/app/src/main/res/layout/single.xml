@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llSingle">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/person"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/ivPhoto"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="#8BC34A"
+        android:layout_weight="3"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="7"
+        android:layout_gravity="center"
+        android:padding="4dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/tvName"
+            android:textColor="@color/grey_700"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/tvArea"
+            android:textColor="@color/grey_700"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/tvSpeciality"
+            android:textColor="@color/grey_700"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCurrency"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0"
+                android:textColor="@color/grey_700"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRate"
+                android:layout_weight="0"
+                android:textColor="@color/grey_700"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
